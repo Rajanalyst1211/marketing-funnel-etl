@@ -1,0 +1,29 @@
+version: 2
+
+models:
+  - name: stg_leads
+    description: "Cleaned and standardised leads data"
+    columns:
+      - name: lead_id
+        tests:
+          - unique
+          - not_null
+      - name: channel
+        tests:
+          - not_null
+      - name: stage
+        tests:
+          - not_null
+
+  - name: stg_campaign_spend
+    description: "Cleaned monthly campaign spend data"
+    columns:
+      - name: month
+        tests:
+          - not_null
+      - name: channel
+        tests:
+          - not_null
+      - name: spend_usd
+        tests:
+          - not_null

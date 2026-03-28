@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: main
+    schema: main
+    tables:
+      - name: raw_leads
+        description: "Raw leads data loaded from CSV"
+      - name: raw_campaign_spend
+        description: "Monthly marketing spend per channel"
