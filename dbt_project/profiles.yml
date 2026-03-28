@@ -1,0 +1,11 @@
+dbt_project:
+  target: dev
+  outputs:
+    dev:
+      type: sqlite
+      threads: 1
+      database: "database"
+      schema: "main"
+      schemas_and_paths:
+        main: "C:/Users/ganga/Documents/Data Engineer/DE Projects/marketing_funnel/marketing-funnel-etl/data/marketing_funnel.db"
+      schema_directory: "C:/Users/ganga/Documents/Data Engineer/DE Projects/marketing_funnel/marketing-funnel-etl/data"
